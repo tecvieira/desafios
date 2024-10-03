@@ -25,7 +25,7 @@
         }
 
         th{
-            background-color: rgb(184, 171, 171);
+            background-color: rgb(221, 202, 202);
         }
 
     </style>
@@ -35,12 +35,14 @@
         <caption>Filmes Prefridos</caption>
         <thead>
             <tr>
-                <th>Grupo</th>
+                <th scope="col">Grupo</th>
                 <th scope="col">Nomes</th>
                 <th colspan="3" scope="colgroup">Filmes</th>
             </tr>
+        </thead>
+        <tbody>
             <tr>
-                <td rowspan="3" row class="linha">Mulheres</td>
+                <th rowspan="3" scope="rowgroup"  class="linha">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Allien</td>
                 <td>Rambo</td>
@@ -59,7 +61,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <td rowspan="3" class="linha">Homens</td>
+                <th rowspan="3" scope="rowgroup" class="linha">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocaveis</td>
                 <td>Amnésia</td>
@@ -77,17 +79,7 @@
                 <td>Taxi Driver</td>
                 <td>Toy Story</td>
             </tr>
-            
-
-
-
-
-        </thead>
-        <tbody>
-
         </tbody>
-
     </table>
-    
 </body>
 </html>
